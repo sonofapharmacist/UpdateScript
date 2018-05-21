@@ -3,12 +3,12 @@
 apt update
 apt full-upgrade -y
 apt-get autoremove -y
-apt install debian-goodies -y
 
 git clone https://github.com/leebaird/discover.git
 
 git clone https://github.com/danielmiessler/SecLists.git
 
+git clone https://github.com/fozavci/viproy-voipkit.git
 
 git clone https://github.com/securestate/eapeak.git
 
@@ -57,25 +57,34 @@ git clone https://github.com/m4ll0k/WPSeku.git
 
 git clone https://github.com/nVisium/xssValidator.git
 
+cd /opt/discover
+./update.sh
+
+
 
 cat << "EOF"
-                                                                                          ..
-                                                                                        .:Kx
-                                                                               ;k.      :0O;
-                                                                             .O0l.     .dk;
-                                                              ':x;          '0Ko.     'dk;
-                                                          .,ddOo'.         .lK0k:     cx,
-                                               .        .ld;:0d.   .'c:.  .lO:0:O.    ,'
-                                             .kl           .l0.  .lO ;dl ,kk  ;x0;   ..
-                                           .lOOlc:.        .0k. lOl  'lo,:cOd;dd,.  .c,
-                                         .ldOk.           .o0..:O0;  Oxl. .:do,
-              'dc;oc.                :;;' ,0x.           .dO:   ,dc:;.
-           'oxd,. ;;.      ',:x' 'xo;o0: ,0k.           .ok:
-          '0x;.        .r 'k  ;l'c0  lkl cdk:.'   ,.   'lko.
-        .l0c.   ...,:l0l.x0:0c'  Odoxxdc  lOx:.   cxkkkxl;.
-        'Ox. .:oxd,.'d   0k,                
-       .0O.   lkk; ,xx    xo:.
-       .OOc..;xl.  .,,.
-        .clOc:.
-          ^^`
+                                                                                                   
+                                                                                                    
+                                                                                                    
+                                                                                          ..        
+                                                                                        .:Kx        
+                                                                               ;k.      :0O;        
+                                                                             .O0l.     .dk;         
+                                                              ':x;          '0Ko.     'dk;          
+                                                          .,ddOo'.         .lK0k:     cx,           
+                                               .        .ld;:0d.   .'c:.  .lO:0:O.    ,'            
+                                             .kl':.        .l0.  .lOc;dl ,kk'.;x0;   ..             
+                                           .lOOlc:.        .0k. lOlx:'lo,:cOd;dd,.  .c,             
+                                         .ldOk.           .o0..:O0;'xOxl. .:do,                     
+              'dc;oc.               ':;;' ,0x.           .dO:   ,dc:;.                              
+           'oxd,. ;;.      ',:x' 'xo;o0:.,0k.           .ok:                                        
+          '0x;.     'l'. .'kd;l'c0c,lkl,cdk:.'   ,.   'lko.                                         
+        .l0c.   ...,:l0l.x00c' cOdoxxdc;,lOx:.   cxkkkxl;.                                          
+        'Ox. .:oxd,.'do.x0k,.  ;oo,....   ..      .....                                             
+       .0O.  'lkk; ,xx;::xo:.                                                                       
+       .OOc..;xl.  .,,.                                                                             
+        .clOc:.                                                                                     
+                                                                                                    
+                                                                                                    
+                                                                                                  
 EOF

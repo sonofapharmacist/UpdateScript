@@ -7,7 +7,38 @@ apt autoremove -y
 cd /opt/discover
 ./update.sh
 
+cd /opt/faraday-dev
+python faraday.py --update
+
+cd /opt/domainhunter
+git fetch --all
+git pull
+
+cd /opt/viproy-voipkit
+git fetch --all
+git pull
+
+cd /opt/aquatone
+git fetch --all
+git pull
+
+cd /opt/GitTools
+git fetch --all
+git pull
+
 cd /opt/SecLists
+git fetch --all
+git pull
+
+cd /opt/Sn1per
+git fetch --all
+git pull
+
+cd /opt/BruteX
+git fetch --all
+git pull
+
+cd /opt/ctfr
 git fetch --all
 git pull
 
@@ -19,23 +50,11 @@ cd /opt/fuzzdb
 git fetch --all
 git pull
 
-cd /opt/owtf
-git fetch --all
-git pull
-
-cd /opt/Brosec
-git fetch --all
-git pull
-
 cd /opt/egression
 git fetch --all
 git pull
 
 cd /opt/gcat
-git fetch --all
-git pull
-
-cd /opt/impacket
 git fetch --all
 git pull
 

@@ -1,6 +1,6 @@
 cd c:\Users\pagelg\Documents\IPT\discover\
 git checkout
-git reset --hard orgin/master
+git reset --hard origin/master
 
 cd c:\Users\pagelg\Documents\IPT\HostRecon\
 git checkout
