@@ -7,8 +7,12 @@ apt autoremove -y
 cd /opt/discover
 ./update.sh
 
-cd /opt/faraday-dev
-python faraday.py --update
+cd /opt/disco_list
+git fetch --all
+git pull
+
+#cd /opt/faraday-dev
+#python faraday.py --update
 
 cd /opt/domainhunter
 git fetch --all

@@ -1,10 +1,18 @@
 #!/bin/bash
 
+wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
+
 apt update
 apt full-upgrade -y
 apt-get autoremove -y
 
 git clone https://github.com/leebaird/discover.git
+
+git clone https://github.com/michenriksen/aquatone.git
+
+git clone https://github.com/sonofapharmacist/discover.git /opt/disco_list
+
+git clone https://github.com/UnaPibaGeek/ctfr.git
 
 git clone https://github.com/danielmiessler/SecLists.git
 

@@ -1,3 +1,5 @@
+update_install.sh should be run from /opt/
+
 The update.sh is for bash, update.bat for windows.
 
 Basics are OS updates for the debian based system.
