@@ -18,6 +18,10 @@ cd /opt/domainhunter
 git fetch --all
 git pull
 
+cd /opt/ikeforce
+git fetch --all
+git pull
+
 cd /opt/viproy-voipkit
 git fetch --all
 git pull

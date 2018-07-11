@@ -6,6 +6,8 @@ apt update
 apt full-upgrade -y
 apt-get autoremove -y
 
+git clone https://github.com/SpiderLabs/ikeforce.git
+
 git clone https://github.com/leebaird/discover.git
 
 git clone https://github.com/michenriksen/aquatone.git
