@@ -12,8 +12,6 @@ git clone https://github.com/leebaird/discover.git
 
 git clone https://github.com/michenriksen/aquatone.git
 
-git clone https://github.com/sonofapharmacist/discover.git /opt/disco_list
-
 git clone https://github.com/UnaPibaGeek/ctfr.git
 
 git clone https://github.com/danielmiessler/SecLists.git
@@ -22,55 +20,40 @@ git clone https://github.com/fozavci/viproy-voipkit.git
 
 git clone https://github.com/securestate/eapeak.git
 
-
 git clone https://github.com/fuzzdb-project/fuzzdb.git
-
 
 git clone https://github.com/owtf/owtf.git
 
-
 git clone https://github.com/gabemarshall/Brosec.git
-
 
 git clone https://github.com/danielmiessler/egression.git
 
-
 git clone https://github.com/byt3bl33d3r/gcat.git
-
 
 git clone https://github.com/CoreSecurity/impacket.git
 
-
 git clone https://github.com/rezasp/joomscan.git
-
 
 git clone https://github.com/zerosum0x0/koadic.git
 
-
 git clone https://github.com/lanjelot/patator.git
-
 
 git clone https://github.com/CoreSecurity/pcapy.git
 
-
 git clone https://github.com/reverse-shell/routersploit.git
-
 
 git clone https://github.com/CoreSecurity/SAP-Dissection-plug-in-for-Wireshark.git
 
-
 git clone https://github.com/ffleming/timing_attack.git
 
-
 git clone https://github.com/m4ll0k/WPSeku.git
-
 
 git clone https://github.com/nVisium/xssValidator.git
 
 cd /opt/discover
 ./update.sh
 
-
+wget https://github.com/sensepost/ruler/releases/download/2.2.0/ruler-linux64 /opt/
 
 cat << "EOF"
                                                                                                    
