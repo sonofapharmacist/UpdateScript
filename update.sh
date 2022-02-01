@@ -1,99 +1,21 @@
 #!/bin/bash
 
-apt update
-apt full-upgrade -y
-apt autoremove -y
+# Global variables
+BLUE='\033[1;34m'
+NC='\033[0m'
 
-cd /opt/discover
-./update.sh
+./opt/discover/update.sh
 
-cd /opt/domainhunter
-git fetch --all
-git pull
+mv /opt/theHarvester/api-keys.yaml /opt/api-keys.yaml
 
-cd /opt/ikeforce
-git fetch --all
-git pull
+for f in *; do
+        if [ "$f" == "koadic" ] || [ -f "$f" ] ; then
+                continue;
+        fi
+	git -C /opt/$f ; echo -e "${BLUE}$f.${NC}" ; git pull; echo ; echo 
+done
 
-cd /opt/viproy-voipkit
-git fetch --all
-git pull
-
-cd /opt/aquatone
-git fetch --all
-git pull
-
-cd /opt/GitTools
-git fetch --all
-git pull
-
-cd /opt/SecLists
-git fetch --all
-git pull
-
-cd /opt/Sn1per
-git fetch --all
-git pull
-
-cd /opt/BruteX
-git fetch --all
-git pull
-
-cd /opt/ctfr
-git fetch --all
-git pull
-
-cd /opt/eapeak
-git fetch --all
-git pull
-
-cd /opt/fuzzdb
-git fetch --all
-git pull
-
-cd /opt/egression
-git fetch --all
-git pull
-
-cd /opt/gcat
-git fetch --all
-git pull
-
-cd /opt/joomscan
-git fetch --all
-git pull
-
-cd /opt/koadic
-git fetch --all
-git pull
-
-cd /opt/patator
-git fetch --all
-git pull
-
-cd /opt/pcapy
-git fetch --all
-git pull
-
-cd /opt/routersploit
-git fetch --all
-git pull
-
-cd /opt/SAP-Dissection-plug-in-for-Wireshark 
-git fetch --all
-git pull
-
-cd /opt/timing_attack 
-git fetch --all
-git pull
-
-cd /opt/WPSeku 
-git fetch --all
-git pull
-
-cd /opt/xssValidator 
-git fetch --all
-git pull
+mv /opt/api-keys.yaml /opt/theHarvester/
 
 checkrestart
 
