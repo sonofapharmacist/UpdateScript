@@ -5,9 +5,10 @@ apt full-upgrade -y
 apt-get autoremove -y
 
 cp update.sh /opt/
+cd /opt/
 
 for f in $(cat /opt/UpdateScript/init_update.list); do
-	git clone "$f" ./opt/ ;
+	git clone "$f";
 done
 
 cd /opt/discover
