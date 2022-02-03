@@ -7,7 +7,7 @@ apt-get autoremove -y
 cp update.sh /opt/
 
 for f in /opt/UpdateScript/init_update.list; do
-	git clone "$f" /opt/.;
+	git clone "$f" ./opt/;
 done
 
 cd /opt/discover
