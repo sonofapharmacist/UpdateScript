@@ -4,15 +4,18 @@
 BLUE='\033[1;34m'
 NC='\033[0m'
 
-./opt/discover/update.sh
+cd /opt/discover/
+./update.sh
 
 mv /opt/theHarvester/api-keys.yaml /opt/api-keys.yaml
+
+cd /opt/
 
 for f in *; do
         if [ "$f" == "koadic" ] || [ -f "$f" ] ; then
                 continue;
         fi
-	git -C /opt/$f ; echo -e "${BLUE}$f.${NC}" ; git pull; echo ; echo 
+	cd /opt/$f ; echo -e "${BLUE}$f.${NC}" ; git pull; echo ; echo 
 done
 
 mv /opt/api-keys.yaml /opt/theHarvester/
