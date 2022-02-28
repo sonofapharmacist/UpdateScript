@@ -13,7 +13,9 @@ cd /opt/
 
 for f in *; do
         if [ "$f" == "koadic" ] || [ -f "$f" ] ; then
-                continue;
+                continue
+	elif [ "$f" == "UpdateScript" ] || [ -f "$f" ] ; then
+		continue
         fi
 	cd /opt/$f ; echo -e "${BLUE}$f.${NC}" ; git pull; echo ; echo 
 done
