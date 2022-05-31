@@ -8,6 +8,7 @@ cd /opt/discover/
 ./update.sh
 
 mv /opt/theHarvester/api-keys.yaml /opt/api-keys.yaml
+mv /opt/spraycharles/list_elements.json /opt/
 
 cd /opt/
 
@@ -21,6 +22,7 @@ for f in *; do
 done
 
 mv /opt/api-keys.yaml /opt/theHarvester/
+mv /opt/list_elements.json /opt/spraycharles/
 
 checkrestart
 
