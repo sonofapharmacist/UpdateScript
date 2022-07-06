@@ -1,3 +1,5 @@
+init_update.sh will pull your current list of git dirs (in /opt/) and strip the git URLs for a fresh install.
+
 update_install.sh should be run from /opt/
 
 The update.sh is for bash, update.bat for windows.
