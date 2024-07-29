@@ -6,6 +6,8 @@ apt-get autoremove -y
 
 cp update.sh /opt/
 cd /opt/
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+
 
 for f in $(cat /opt/UpdateScript/init_update.list); do
 	git clone "$f";
