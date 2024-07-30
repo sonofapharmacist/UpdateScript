@@ -3,6 +3,7 @@
 apt update
 apt full-upgrade -y
 apt-get autoremove -y
+apt install debian-goodies -y
 
 cp update.sh /opt/
 cd /opt/
