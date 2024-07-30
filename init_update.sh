@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cp /opt/theHarvester/api-keys.yaml /opt/api-keys.yaml
+cd /opt
+cp /opt/theHarvester/theHarvester/data/api-keys.yaml /opt/api-keys.yaml
 
 for f in *; do
 	if [ "$f" == "koadic" ] || [ -f "$f" ] ; then
@@ -8,6 +9,7 @@ for f in *; do
 	fi
 	git -C /opt/"$f" remote show origin | grep "Fetch" | cut -d' ' -f5 >> init_update.list
 done
+mv init_update.list /opt/UpdateScript/
 
 cat << "EOF"
                                                                                                    

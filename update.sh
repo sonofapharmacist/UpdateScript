@@ -7,7 +7,7 @@ NC='\033[0m'
 cd /opt/discover/
 ./update.sh
 
-mv /opt/theHarvester/api-keys.yaml /opt/api-keys.yaml
+mv /opt/theHarvester/theHarvester/data/api-keys.yaml /opt/api-keys.yaml
 mv /opt/spraycharles/list_elements.json /opt/
 
 cd /opt/
@@ -21,7 +21,7 @@ for f in *; do
 	cd /opt/$f ; echo -e "${BLUE}$f.${NC}" ; git pull; echo ; echo 
 done
 
-mv /opt/api-keys.yaml /opt/theHarvester/
+mv /opt/api-keys.yaml /opt/theHarvester/theHarvester/data/
 mv /opt/list_elements.json /opt/spraycharles/
 
 checkrestart
