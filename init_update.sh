@@ -4,12 +4,13 @@ cd /opt
 cp /opt/theHarvester/theHarvester/data/api-keys.yaml /opt/api-keys.yaml
 
 for f in *; do
-	if [ "$f" == "koadic" ] || [ -f "$f" ] ; then
+	if [ "$f" == "koadic","UpdateScript" ] || [ -f "$f" ] ; then
 		continue;
 	fi
-	git -C /opt/"$f" remote show origin | grep "Fetch" | cut -d' ' -f5 >> init_update.list
+	git -C /opt/"$f" remote show origin | grep "Fetch" | cut -d' ' -f5 >> init_update.list01
 done
-mv init_update.list /opt/UpdateScript/
+sort -u init_update.list01 > /opt/UpdateScript/init_update.list
+rm init_update.list01
 
 cat << "EOF"
                                                                                                    
