@@ -8,7 +8,7 @@ apt install debian-goodies -y
 cp update.sh /opt/
 cd /opt/
 go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
-
+npm install @stellata/webanalyzer
 
 for f in $(cat /opt/UpdateScript/init_update.list); do
 	git clone "$f";
